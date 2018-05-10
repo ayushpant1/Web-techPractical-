@@ -1,0 +1,55 @@
+/* main.css contains all the code that can be reused in different pages. */
+
+/* Color Pallette
+https://flatuicolors.com/palette/in
+*/
+:root {
+  --main-dark: #2c3a47;
+  --main-background: #f7f7f7;
+  --blue-light: #25ccf7;
+  --blue: #1b9cfc;
+  --blue-dark: #182c61;
+  --red: #fd7272;
+  --green-light: #55e6c1;
+  --green-dark: #58b19f;
+  --yellow: #eab543;
+  --magenta: #6d214f;
+}
+
+/* Basic page resets */
+* {
+  /* Removes default padding and margin from components */
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: all 200ms;
+}
+
+html {
+  /* The default font size of browser is 16px. This is changed to 10px. Percentages are used so that the user can still zoom-in or out on the page. */
+  font-size: 62.5%;
+  font-family: sans-serif, serif;
+}
+
+body {
+  /* Changed background to a soothing shade of white */
+  background: var(--main-background);
+  font-size: 1.2rem;
+}
+
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+h4 {
+  font-size: 1.4rem;
+}

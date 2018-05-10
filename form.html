@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HTML Form With Validation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="form.css" />
+</head>
+
+<body>
+    <div class="container">
+            <form class="form" action="#" method="post">
+        <div class="card">
+
+            <div class="card-header">
+                <h1>Basic Info.</h1>
+            </div>
+
+            <div class="card-content">
+                <!-- action is set to # as we have nowhere to post to. -->
+                
+                    <div class="input-group">
+                        <input type="text" id="name" placeholder="Full Name" required>
+                        <label for="name">Full Name</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="tel" id="phoneNumber" placeholder="Phone Number" size="10" minlength="10" maxlength="10" required>
+                        <label for="phoneNumber">Phone Number</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="number" id="age" placeholder="Age" min="1" max="100" required>
+                        <label for="age">Age</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" id="email" placeholder="Email" required>
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="date" id="date" placeholder="Date"  required>
+                        <label for="date">Date</label>
+                    </div>
+                    <div class="input-group">
+                        <textarea name="address" id="address" cols="37" rows="5" placeholder="Address"  required></textarea>
+                        <label for="address">Address</label>
+                    </div>
+                    <div class="card-footer">
+                        <button class="button" type="submit" id="submit_button">Submit</button>
+                    </div>
+               
+            </div>
+        </div>
+        <div class="card">
+
+            <div class="card-header">
+                <h1>Player Attribute</h1>
+            </div>
+
+            <div class="card-content">
+                <!-- action is set to # as we have nowhere to post to. -->
+               
+
+                    <div class="radio-group">
+                            <label1 ><strong>PlayerType:</strong> </label1>
+                        <input type="radio" id="batsman" value="" name="player_type" >Batsman
+                        <input type="radio" id="bowler" value="" name="player_type" >Bowler
+                        <input type="radio" id="allrounder" value="" name="player_type" >AllRounder
+                    </div>
+
+                    <div class="radio-group1">
+                            <label1 ><strong>BattingType:</strong> </label1>
+                            <input type="radio" id="left_handed" value="" name="batsman_type" >LeftHandedBatsman
+                            <input type="radio" id="right_handed" value="" name="batsman_type" >RightHandedbatsman
+
+                        </div>
+                        <div class="radio-group2">
+                                <label1 ><strong>BowlingType:</strong> </label1>
+                                <input type="radio" id="left_handed" value="" name="bowler_type" >LeftHandedBowler
+                                <input type="radio" id="right_handed" value="" name="bowler_type" >RightHandedBowler
+
+                            </div>
+                            <div class="radio-group2">
+                            <label1 ><strong>Countries:</strong> </label1>
+                            <select id="country">
+
+                            </select>
+</div>
+                    <div class="radio-group2">
+                    <label1 ><strong>Teams:</strong> </label1>
+                        <select  name="teams" id="teams">
+                            <option value="RCB">Royal Challengers Banglore</option>
+                            <option value="CSK">Chennai Super Kings</option>
+                            <option value="RR">Rajasthan Royals</option>
+                            <option value="KXIP">Kings XI Punjab</option>
+                            <option value="DD">Delhi Daredevils</option>
+                            <option value="KKR">Kolkata Knight Riders </option>
+                            <option value="MI">Mumbai Indians</option>
+                            <option value="SRH">Sunrise Hyderabad</option>
+
+
+                             </select>
+                            </div>
+
+                    <div class="card-footer">
+                        <button class="button" type="reset" id="reset_button">Reset</button>
+                    </div>
+             
+            </div>
+        </div>
+        </form>
+    </div>
+    <script src="form.js"></script>
+</body>
+
+</html>
